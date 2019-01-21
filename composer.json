@@ -1,0 +1,30 @@
+{
+    "name": "uzzaircode/star-rating-ui",
+    "description": "star rating ui",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Uzzair Baharudin",
+        "email": "uzzaircode@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Uzzaircode\\StarRatingUI\\": "src/"
+        },
+        "files": [
+            "src/helpers/Helper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uzzaircode\\StarRatingUI\\StarRatingUIServiceProvider"
+            ],
+            "aliases": {
+                "StarRatingUI": "Uzzaircode\\StarRatingUI\\StarRatingUIFacade"
+            }
+        }
+    }
+}
