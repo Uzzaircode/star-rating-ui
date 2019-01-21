@@ -52,7 +52,7 @@ class StarRatingUIServiceProvider extends ServiceProvider
 
         # views
         $this->publishes([
-            __DIR__ . '/views' => resource_path('vendor/star-rating-ui')
+            __DIR__ . '/views' => resource_path('/views/vendor/star-rating-ui')
         ], 'views');
 
         # config files
